@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COFFEE HOUSE order</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 class="title">COFFEE HOUSE</h1>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <div class="credentials">
+          <input class="name" placeholder="Введите Фамилию" />
+          <input class="surname" placeholder="Введите Имя" />
+        </div>
+
+        <div class="menu">
+          <div class="drinks">
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Эспрессо"
+                  data-price="80"
+                  id="espresso"
+                  onchange="totalCounting()"
+                />
+                <label for="espresso">Эспрессо 80р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Латте"
+                  data-price="110"
+                  id="latte"
+                  onchange="totalCounting()"
+                />
+                <label for="latte">Латте 110р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Капучино"
+                  data-price="120"
+                  id="capuchino"
+                  onchange="totalCounting()"
+                />
+                <label for="capuchino">Капучино 120р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Американо"
+                  data-price="90"
+                  id="americano"
+                  onchange="totalCounting()"
+                />
+                <label for="americano">Американо 90р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+          </div>
+
+          <div class="snacks">
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Шоколадный кекс"
+                  data-price="80"
+                  id="chococake"
+                  onchange="totalCounting()"
+                />
+                <label for="chococake">Шоколадный кекс 80р.</label>
+              </div>
+              <input
+                type="number"
+                name="chococake"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Черничный кекс"
+                  data-price="90"
+                  id="bluecake"
+                  onchange="totalCounting()"
+                />
+                <label for="bluecake">Черничный кекс 90р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+            <div class="product">
+              <div class="product__choice">
+                <input
+                  type="checkbox"
+                  data-name="Яблочный тарт"
+                  data-price="100"
+                  id="appletart"
+                  onchange="totalCounting()"
+                />
+                <label for="appletart">Яблочный тарт 100р.</label>
+              </div>
+              <input
+                type="number"
+                class="amount"
+                placeholder="0"
+                min="0"
+                max="100"
+                onchange="totalCounting()"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p class="total">Итого: <span class="total__amount"></span> р.</p>
+
+        <button class="submit__order" onclick="orderConfirmation()">
+          Оформить заказ
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

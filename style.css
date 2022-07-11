@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.header {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  color: black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #817070;
+}
+
+.container {
+  height: 560px;
+  padding-top: 86px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.credentials {
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.credentials input {
+  width: 300px;
+  height: 50px;
+  background-color: #817070;
+  border: 3px solid #FFFFFF;
+  outline: none;
+  text-align: center;
+  color: #4b1d3b;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+.credentials input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+.credentials input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.credentials input:focus {
+  color: #4b1d3b;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+
+.menu {
+  width: 788px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 32px;
+}
+
+.drinks, .snacks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 46px;
+}
+.drinks {
+  height: 280px;
+}
+.snacks {
+  height: 208px;
+}
+
+.drinks .product {
+  width: 310px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+  width: 355px;
+}
+
+.product__choice {
+  display: flex;
+  align-items: center;
+}
+
+.product__choice label {
+  margin-left: 15px;
+}
+
+[type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  background-color: #C4C4C4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+[type="checkbox"]:checked {
+  background-color: #642c50;
+  border: solid 3px #C4C4C4;
+}
+[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+[type="number"] {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;  
+}
+[type="number"]::placeholder {
+  color: white;
+}
+
+.amount {
+  width: 101px;
+  padding-left: 12px;
+  height: 49px;
+  background: #817070;
+  border: 3px solid #FFFFFF;
+}
+.amount:focus-visible {
+  outline: none;
+
+}
+
+.total {
+  align-self: center;
+}
+
+.submit__order {
+  align-self: center;
+  width: 190px;
+  height: 55px;
+  background: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #817070;
+  cursor: pointer;
+}
+.submit__order:hover {
+  color:#4b1d3b;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
